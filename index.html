@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+
+      
+   
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+	  <style>             
+	  	.carousel {
+	  	margin-top:20px;
+		  }
+	  	.carousel-inner img {
+	  	margin:auto;
+		  }
+
+	  </style>
+      <SCRIPT LANGUAGE="JavaScript">
+
+
+
+
+
+
+msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+"A new computer is sold in the US every hour!",
+"When do birds migrate from North to South?",
+"Perplexing phrases, like this one, are tougher to type.")
+word = 10
+function m() {
+msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+"A new computer is sold in the US every hour!",
+"When do birds migrate from North to South?",
+"Perplexing phrases, like this one, are tough to type.")
+word = 10
+}
+function e() {
+msg = new Array("If you can correctly, and quickly, type this perplexing sentence, you are one superb typist!",
+"You are one superb typist if you can correctly, and quickly, type this long phrase.",
+"I believe you're a good typist, so I believe you will correctly copy this statement!",
+"Because this is not a fairly simple phrase, could you swiftly, and precisely, copy it?")
+word = 15
+}
+function s() {
+msg = new Array("Computers are the medium of the future.",
+"Can you type this phrase rather quickly?",
+"Who is the President of the US?",
+"I believe that you can type well!")
+word = 7
+}
+function beginIt() {
+randNum = Math.floor((Math.random() * 10)) % 4
+msgType = msg[randNum]
+day = new Date();
+startType = day.getTime();
+document.theForm.given.value = msgType
+document.theForm.typed.focus();
+document.theForm.typed.select();
+}
+function cheat() {
+alert("You can not change that!");
+document.theForm.typed.focus();
+}
+function stopIt() {
+dayTwo = new Date();
+endType = dayTwo.getTime();
+totalTime = ((endType - startType) / 1000)
+spd = Math.round((word/totalTime) * 60)
+if (document.theForm.typed.value == document.theForm.given.value) {
+alert("\nYou typed a " + word + " word sentence in "
++ totalTime + " seconds, a speed of about " + spd + " words per minute!")
+}
+else {
+alert("You made an error, but typed at a speed of " + spd + " words per minute.")
+   }
+}
+// End -->
+      </SCRIPT>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">MY Project</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#video">Video</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#nation">Nation & etc</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#game">Game</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+
+
+	  <!--주석풀어-->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Hyuk JOON WEBSITE</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">I will introduce a few games that made by me. </h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        </div>
+      </div>
+    </header>
+  	<!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  		<ol class="carousel-indicators">
+  			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  		</ol>
+  		
+
+  			<div class="carousel-inner">
+  				<div class="carousel-item active">
+  					<img class="d-block w-100" src="img/sfalpha3.png" alt="First slide">
+				  	<h1>My First Game.</h1>
+					  <p>this game blablablablablalbalba</p>
+  				</div>
+  				<div class="carousel-item">
+  					<img class="d-block w-100" src="img/gradius3_resize.jpg" alt="Second slide">
+				  	<h1>My Second Game.</h1>
+				  	<p>this game blablablablablalbalba</p>
+  				</div>
+  				<div class="carousel-item">
+  					<img class="d-block w-100" src="img/jFlash1.jpg" alt="Third slide">
+				  	<h1>My Thrid Game.</h1>
+				  	<p>this game blablablablablalbalba</p>
+  				</div>
+				  
+  			</div>
+  		</div>
+  	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  		<span class="sr-only">Previous</span>
+  	</a>
+  	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+  		<span class="sr-only">Next</span>
+  	</a>-->
+
+  		<!-- About Section -->
+  		<section id="about" class="about-section text-center">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-lg-8 mx-auto">
+  						<h2 class="text-white mb-4">About me</h2>
+  						<p class="text-white-50">
+  							I was 25 years old,I have been studying at Woosong University for three years. I live in Incheon and my major is programming. 
+  							<a href="https://www.wsu.ac.kr/main/intro.jsp">Woosong University</a>. If you study in this University, you can have chance to make games like this.
+  						</p>
+  					</div>
+  				</div>
+  				<img src="img/abc.jpg" class="img-fluid" alt="" width="500" height="200">
+  			</div>
+  		</section>
+  		<!-- Projects Section -->
+  		<section id="projects" class="projects-section bg-light">
+              <div class="container">
+                  <!-- Featured Project Row -->
+                  <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                      <div class="col-xl-8 col-lg-7">
+                          <img class="img-fluid mb-3 mb-lg-0" src="img/first.jpg" alt="">
+                      </div>
+                      <div class="col-xl-4 col-lg-5">
+                          <div class="featured-text text-center text-lg-left">
+                              <h4>My First Game</h4>
+                              <p class="text-black-50 mb-0">The side Picture is my first Game.this game is running game what everyone can play easily. </p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Project One Row -->
+                  <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                      <div class="col-lg-6">
+                          <img class="img-fluid" src="img/tankgame.png" alt="">
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="bg-black text-center h-100 project">
+                              <div class="d-flex h-100">
+                                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                                      <h4 class="text-white">Tank Attack Game</h4>
+                                      <p class="mb-0 text-white-50">This is tankattack game. In this game, you can play with another person. I study about photoncloud during make this game. In layman’s terms, photoncloud is like server.</p>
+                                      <hr class="d-none d-lg-block mb-0 ml-0">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Project Two Row -->
+                  <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                      <div class="col-lg-6">
+                          <img class="img-fluid" src="img/open.png" alt="">
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="bg-black text-center h-100 project">
+                              <div class="d-flex h-100">
+                                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                                      <h4 class="text-white">Open API</h4>
+                                      <p class="mb-0 text-white-50">Using Open API, You can find the current weather for your location. </p>
+                                      <hr class="d-none d-lg-block mb-0 ml-0">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Project Three Row -->  
+                  <!-- carousel -->
+                  <div class="row justify-content-center no-gutters">    <!--make carousel-->
+                      <div class="col-lg-6" data-ride="carousel" data-interval="2000">
+                          <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+
+
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img class="d-block w-100" src="img/test.jpg" alt="First slide">
+                              </div>
+                              <div class="carousel-item ">
+                                  <img class="d-block w-100" src="img/test2.jpg" alt="Second slide">
+                              </div>
+                              <div class="carousel-item ">
+                                  <img class="d-block w-100" src="img/test3.jpg" alt="Third slide">
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="col-lg-6 order-lg-first">
+                          <div class="bg-black text-center h-100 project">
+                              <div class="d-flex h-100">
+                                  <div class="project-text w-100 my-auto text-center text-lg-right">
+                                      <h4 class="text-white">VR</h4>
+                                      <p class="mb-0 text-white-50">This is the biggest project to me.This project was maked with four member.That project maked for the people who practice to drive car. If you play that game with VR device,You can actually feel like driving.</p>
+                                      <hr class="d-none d-lg-block mb-0 mr-0">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <section id="video" class="video-section bg-light text-center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                              <h2 class="text-black-50 mb-4">Video</h2>
+                              <p class="text-black-50">
+                                 That's My Video..
+                                  <a href="https://youtu.be/7LnH8e7cikQ">Game Scenes</a>. If you study in this University, you can have chance to make games like this.
+                              </p>
+                          </div>
+                      </div> 
+                  </div>
+              </section>
+              <section id="skills" class="skills-section text-center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-9 mx-auto">
+                              <h2 class="text-black mb-4">Skills</h2>
+                              <p class="text-white-50">
+
+                              </p>
+                          </div>
+                      </div>
+                      <img src="img/unity.png" class="img-fluid" alt="" width="200" height="50">
+                      <img src="img/visual studio.jpg" class="img-fluid" alt="" width="200" height="50">
+                      <img src="img/photoshop.png" class="img-fluid" alt="" width="200" height="50">
+                  </div>
+              </section>
+  				<!--<div class="row justify-content-center no-gutters">
+  					<div class="col-lg-6">
+  						<img class="img-fluid" src="img/test.jpg" alt="">
+  					</div>
+  					<div class="col-lg-6 order-lg-first">
+  						<div class="bg-black text-center h-100 project">
+  							<div class="d-flex h-100">
+  								<div class="project-text w-100 my-auto text-center text-lg-right">
+  									<h4 class="text-white">VR</h4>
+  									<p class="mb-0 text-white-50">This is the biggest project to me.This project was maked with four member.That project maked for the people who practice to drive car. If you play that game with VR device,You can actually feel like driving.</p>
+  									<hr class="d-none d-lg-block mb-0 mr-0">
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>-->
+
+
+        
+
+  		</section>
+  		<!-- Signup Section -->
+  		<section id="signup" class="signup-section">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-10 col-lg-8 mx-auto text-center">
+  						<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+  						<h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+  						<form class="form-inline d-flex">
+  							<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+  							<button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+  						</form>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+  		<!-- Contact Section -->
+  		<section class="contact-section bg-black">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-4 mb-3 mb-md-0">
+  						<div class="card py-4 h-100">
+  							<div class="card-body text-center">
+  								<i class="fas fa-map-marked-alt text-primary mb-2"></i>
+  								<h4 class="text-uppercase m-0">Address</h4>
+  								<hr class="my-4">
+  								<div class="small text-black-50">Dajeon 56-10 smilehome 303</div>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-4 mb-3 mb-md-0">
+  						<div class="card py-4 h-100">
+  							<div class="card-body text-center">
+  								<i class="fas fa-envelope text-primary mb-2"></i>
+  								<h4 class="text-uppercase m-0">Email</h4>
+  								<hr class="my-4">
+  								<div class="small text-black-50">
+  									<a href="#">vukan4879@gmail.com</a>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-md-4 mb-3 mb-md-0">
+  						<div class="card py-4 h-100">
+  							<div class="card-body text-center">
+  								<i class="fas fa-mobile-alt text-primary mb-2"></i>
+  								<h4 class="text-uppercase m-0">Phone</h4>
+  								<hr class="my-4">
+  								<div class="small text-black-50">010-9576-6373</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				
+  			</div>
+
+  		</section>
+      <!-- Nation Section -->
+      <section id="nation" class="nation-section text-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-9 mx-auto">
+                      <h2 class="text-black mb-4">Nation & Inform</h2>
+                      <h3 id="response" class="masthead-subheading mb-0">Your country code is: </h3>
+                      <div>
+                          <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=36.33663200000001~127.44477599999999&lvl=17&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
+                          <div style="white-space: nowrap; width: 500px; padding: 6px 0;">
+                              <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=36.33663200000001~127.44477599999999&amp;sty=r&amp;lvl=17&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                              <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=36.33663200000001~127.44477599999999&amp;sty=r&amp;lvl=17&amp;rtp=~pos.36.33663200000001_127.44477599999999____&amp;FORM=MBEDLD">Get Directions</a>
+                          </div>
+                      </div>
+                      <div id="cont_df0fbf192b40e657d4ef2b87e3dce9ea"></div>
+                          <div style='display:inline-block; border: 1px solid #CCC; border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; position: relative; overflow: hidden; width: 310px; height: 400px;'><iframe src='https://spotthestation.nasa.gov/widget/widget.cfm?country=South_Korea&region=None&city=Seoul&theme=2' width='310' height='450' frameborder='0'></iframe></div>
+                      </div>
+                  <div id="cont_df0fbf192b40e657d4ef2b87e3dce9ea">
+                  <script type="text/javascript" async src="https://www.theweather.com/wid_loader/df0fbf192b40e657d4ef2b87e3dce9ea"></script>
+                  </div>    
+                 
+              </div>
+          </div>
+      </section>
+      <!-- Game Section -->
+      <section id="game" class="game-section text-center">
+          <div class="container">
+              <div class="row">
+                  <div>
+                      <FORM name="theForm">
+                          <TABLE BORDER=3 CELLSPACING=0 CELLPADDING=0>
+                              <TR>
+                                  <TD>Are you a....</TD>
+                                  <TD align=center>
+                                      <input type=radio name="sme" value="Beginner" onClick="s()" checked>Beginner
+                                      <input type=radio name="sme" value="Novice" onClick="m()">Novice
+                                      <input type=radio name="sme" value="Expert" onClick="e()">Expert
+                                  </TD>
+                              </TR>
+                              <TR>
+                                  <TD colspan=2>
+                                      <BR>
+                                      <center><input type=button value="Start Typing Test" name="start" onClick="beginIt()"></center><P>
+                       <textarea name="given" cols=53 rows=3  onFocus="cheat()"></textarea>
+                                  </TD>
+                              </TR>
+                              <TR>
+                                  <TD colspan=2>
+                                      <center>
+                                          <input type=text name="typed" size=45>
+                                          <input type=button value="DONE" name="stop" onClick="stopIt()">
+                                      </center>
+                                  </TD>
+                              </TR>
+                          </TABLE>
+                      </FORM>
+                    
+
+                  </div>
+              </div>
+          </div>
+      </section>
+  		<!-- Footer -->
+  		<footer class="bg-black small text-center text-white-50">
+  			<div class="container">
+  				Copyright &copy; Your Website 2018
+  			</div>
+  		</footer>
+  		<!-- Bootstrap core JavaScript -->
+  		<script src="vendor/jquery/jquery.min.js"></script>
+  		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  		<!-- Plugin JavaScript -->
+  		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  		<!-- Custom scripts for this template -->
+  		<script src="js/grayscale.min.js"></script>
+      <script>
+        //Get the country code.
+        $.get("https://api.ipdata.co?api-key=test",
+
+        function (response) {
+          $("#response").html("Your country code is: "+response.country_code);
+        },
+
+        "jsonp");
+      </script>
+
+</body>
+
+</html>
